@@ -1,0 +1,201 @@
+#wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-around;
+    min-height: 3em;
+    margin-bottom: 1em;
+    .my-auto {
+        width: 100%;
+        padding: 1em;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 1em;
+        .col.colTwo {
+            display: none;
+        }
+        .col {
+            flex-direction: column;
+            display: flex;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-sizing: content-box;
+            align-items: center;
+            padding: 0;
+        }
+    }
+}
+.contact {
+    .row {
+        .col {
+
+            align-items: flex-start;
+        }
+    }
+}
+.col-container {
+    width: 100%;
+    padding: 0 1em;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.space-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .fa {
+        padding: 0 0.5em;
+        cursor: pointer;
+    }
+}
+
+.content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 33%;
+    padding: 7em 0;
+}
+
+a.block-link {
+    width: 100%;
+    height: 100%;
+    transition: ease all 0.7s;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    .col-container {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .row {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .col {
+                margin:.7em 0;
+                height:inherit;
+                padding: 0;
+                flex-basis:initial;
+                font-size:.8em;
+                img {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+.aws-container .aws-search-form {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+    .section .contact .row .col:nth-child(2) {
+        display: none;
+    }
+
+}
+@media (min-width: 992px) {
+    .col.colTwo {
+        display: inherit !important;
+        height: 38em;
+        overflow: hidden;
+        margin-top: 4.4em;
+        margin-left: 1em;
+    }
+    .space-icons {
+        display: flex;
+        flex-direction: row;
+        font-size:1.35em;
+        justify-content: center;
+        .fa {
+            // padding: 0 .75em;
+            cursor: pointer;
+        }
+    }
+
+    a.block-link {
+        width: 100%;
+        height: 100%;
+    }
+    .section {
+        box-sizing: content-box;
+        display: flex;
+        justify-content: space-around;
+        min-height: 3em;
+        margin-bottom: 2em;
+        .my-auto {
+            width: 100%;
+            padding: 3em;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 4em;
+            .col {
+                flex-direction: column;
+                display: flex;
+                background-repeat: no-repeat;
+                background-position: center;
+                box-sizing: content-box;
+                align-items: center;
+
+            }
+        }
+    }
+
+    .col-container {
+        width: 100%;
+        padding: 0 3em;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        height: 12em;
+        text-align: center;
+        padding: 3em;
+        align-items: center;
+        .col-container {
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .row {
+                flex:1 0 33%;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                .col {
+                  display: flex;
+                  flex:1 0 33%;
+                  font-size:1em;
+                  align-items:center;
+                  img {
+                    display: block;
+                }
+              }
+            }
+        }
+    }
+
+}
